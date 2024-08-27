@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	line-height: 1.5;
+	font-family: "Noto Sans TC", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+.font-roboto {
+	font-family: "Roboto", sans-serif;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 300,
+	'GRAD' 200,
+	'opsz' 40
+  }
+  
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container2{
+	max-width: 636px;
+	margin: 0 auto;
+}
+
+.contact{
+	width: 100%;
+}
+
+.navbar{
+	height: 80px;
+}
+
+@media (max-width: 992px){
+	.navbar{
+		height: 40px;
+		background-color: green;
+	}
+}
+
+.banner{
+	background-image: url(./img/home-header.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	height: 787px;
+}
+
+@media (max-width: 992px){
+	.banner{
+	background-image: url(./img/home-header-sm.png)
+	
+}
+	
+}
+
+.cooperate{
+	background-image: url(./img/index-bg.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+	height: 608px;
+}
+
+.publicity{
+	font-size: 24px;
+	color: #650300;
+	font-weight: bolder;
+	margin-bottom: 4px;
+}
+
+
+.inputbox{
+	width: 100%;
+	padding: 6px 12px;
+	border: solid black 1px;
+	font-size: 16px;
+	
+}
+
+.submitbtn{
+	font-family: "Noto Sans TC", sans-serif;
+	font-size: 16px;
+	background-color: #AA0601;
+	color: white;
+	width: 416px;
+	height: 56px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.textbox-h136{
+	height: 136px;
+}
+
+input::placeholder{
+	opacity: 0.2;
+}
+.footer{
+	padding-top: 60px;
+	padding-bottom: 32px;
+}
+.footerNav{
+	display: flex;
+	font-size: 16px;
+	margin-bottom: 36px;
+	color: white;
+	justify-content: space-between;
+	gap: 48px;
+}
+.community{
+	width: 320px;
+	display: flex;
+	justify-content: end;
+	gap: 32px;
+}
+.community img{
+	width: 48px;
+	height: 48px;
+	
+}
+
+.phoneNo{
+	color: white;
+	font-size: 36px;
+	height: 48px;
+}
+
+.dp-flx{
+    display: flex;
+}
+
+.bgc-red{
+    background-color: #AA0601;
+}
+.bgc-pink{
+	background-color: #FBF2F2;
+}
+.bgc-white{
+	background-color: white;
+}
+.font-20{
+	font-size: 20px;
+}
+.font-36{
+	font-size: 36px;
+}
+.font-48{
+	font-size: 48px;
+}
+.font-64{
+	font-size: 64px;
+}
+
+.font-red{
+	color: #aa0601;
+}
+.font-darkred{
+	color: #650300;
+}
+.font-white{
+	color: white;
+}
+
+.font-gray{
+	color: #707070;
+	
+}
+
+.font-bold{
+	font-weight:bold
+}
+.font-italic{
+	font-style: italic;
+}
+
+.align-items-center{
+	align-items: center;
+}
+.align-items-start{
+	align-items: start;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+
+.flex-direction-column{
+	flex-direction: column;
+}
+
+.jc-center{
+	justify-content: center;
+}
+
+.jcsb{
+	justify-content: space-between;
+}
+.jcsa{
+	justify-content: space-around;
+}
+.jc-end{
+	justify-content:flex-end;
+}
+
+.gap24{
+	gap: 24px;
+}
+
+.gap48{
+	gap: 48px;
+}
+
+.mt8{
+	margin-top: 8px;
+}
+.ml20{
+	margin-left: 20px;
+}
+
+.mr24{
+	margin-right: 24px;
+}
+
+.mr48{
+	margin-right: 48px;
+}
+.mr64{
+	margin-right: 64px;
+}
+.mb4{
+	margin-bottom: 4px;
+}
+.mb8{
+	margin-bottom: 8px;
+}
+
+.mb16{
+	margin-bottom: 16px;
+}
+.mb24{
+	margin-bottom: 24px;
+}
+.mb32{
+	margin-bottom: 32px;
+}
+.mb48{
+	margin-bottom: 48px;
+}
+
+.padding8{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+
+.padding80{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.btn-padding{
+	padding: 6px 12px;
+}
+
+.nav li a{
+	padding: 20px 0;
+	color: white;
+	
+}
+.logo{
+	width: 80px;
+	height: 72px;
+}
+
+.w306{
+	width: 306px;
+}
+.w23p{
+	width: 23%;
+}
+
+.h100{
+	height: 100%;
+}
+
+.icon{
+	width: 83px;
+	margin-bottom: 24px;
+}
+
+.bgc-pink h2{
+	color: #650300;
+	font-weight: bold;
+}
+
+.service ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+	color: black;
+}
+
+.ClassicGlasses ul li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.GlassesDesc{
+	color: #aa0601;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 900;
+	font-weight: bold;
+}
+.ClassicImg{
+	width: 416px;
+	margin-bottom: 8px;
+}
+
+.customerCard{
+	width: 306px;
+	height: 511px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+	border: 1px solid #DEE2E6;
+	border-radius: 4px;
+}
+
+.link{
+	color: white;
+	font-size: 36px;
+	line-height: 1.5;
+}
+
+.customerCard div{
+	padding: 16px 16px 0px 16px;
+}
+
+.customerCard div li{
+	font-size: 16px;
+}
+.fz14{
+	font-size: 14px;
+}
+.fz16{
+	font-size: 16px;
+}
+.fz20{
+	font-size: 20px;
+}
+
+.line{
+	margin-top: 32px;
+	margin-bottom: 32px;
+	color: white;
+}
+
+.statement{
+	color: white;
+	font-size: 16px;
+}
+
+.statement a{
+	color: white;
+}
